@@ -21,7 +21,7 @@ module.exports = function trackRevisions(Model) {
     return;
   }
   const modelNameSuffix = '_revision';
-  const omittedAttributes = ['createdAt', 'updatedAt', 'deletedAt'];
+  const omittedAttributes = ['createdAt'];
   const fieldsToIgnore = [
     'primaryKey',
     'autoIncrement',
